@@ -1,12 +1,11 @@
 #include <stdio.h>
-
-//using define as preprocessor
-#define LENGTH 10
-#define WIDTH 5
-#define NEWLINE '\n'
-
 int main(){
-    int area;    
+
+    // Let's try const this time
+    const int LENGTH = 10;
+    const int WIDTH = 5;
+    const char NEWLINE = 'n';
+    int area;
 
     area = LENGTH * WIDTH;
     printf("the value of area: %d\n", area);

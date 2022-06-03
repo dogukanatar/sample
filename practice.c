@@ -1,26 +1,12 @@
 #include <stdio.h>
 
-// function declaration
-void func(void);
+int main () {
 
-// static variable declaration and definition
-// global variable
-static int count = 5;
+   int  var1;
+   char var2[10];
 
-// main function declaration
-int main(){
-    // while loop  
-    while (count--)
-    {
-        func();
-    }
-    return 0;
+   printf("Address of var1 variable: %x\n", &var1  );
+   printf("Address of var2 variable: %x\n", &var2  );
 
-}
-
-void func(void){
-    // staic local variable
-    static int i = 5;
-    i++;
-    printf("i is %d and count is %d\n", i, count);
+   return 0;
 }
